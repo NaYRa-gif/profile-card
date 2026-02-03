@@ -1,4 +1,6 @@
 import { UserStats, UserProfiles } from '@/src/types/index';
+import UserInfo from '../components/UserInfo';
+import PlofileCarfd from '../components/ProfileCard';
 
 const dummyProfile: UserProfiles = {
     name: "John Doe",
@@ -16,7 +18,12 @@ export default function Page() {
     return (
         <div className="flex min-h-screen bg-cyan-100 items-center justify-center">
             <div className="bg-white p-10 rounded-2xl shadow-xl">
-                <h1 className="text-2xl font-bold">{dummyProfile.name}</h1>
+                <UserInfo
+                    name={dummyProfile.name}
+                    age={dummyProfile.age}
+                    location={dummyProfile.location}
+                    avataUrl={dummyProfile.avataUrl}
+                />
             </div>
         </div>
     )
