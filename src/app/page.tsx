@@ -1,4 +1,4 @@
-import { UserStats, UserProfiles } from '@/src/types/index';
+import { UserProfiles } from '@/src/types/index';
 import UserInfo from '../components/UserInfo';
 import PlofileCarfd from '../components/ProfileCard';
 
@@ -6,7 +6,7 @@ const dummyProfile: UserProfiles = {
     name: "John Doe",
     age: 28,
     location: "Tokyo, Japan",
-    avataUrl: "https://example.com/avatar.jpg",
+    avataUrl: "@/public/avatar.JPG",
     stats: {
         followers: "1.2K",
         likes: "3.4K",
