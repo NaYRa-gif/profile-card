@@ -6,7 +6,7 @@ const dummyProfile: UserProfiles = {
     name: "John Doe",
     age: 28,
     location: "Tokyo, Japan",
-    avataUrl: "@/public/avatar.JPG",
+    avataUrl: "/Users/mt.circle/profile-card/public/avatar.png",
     stats: {
         followers: "1.2K",
         likes: "3.4K",
