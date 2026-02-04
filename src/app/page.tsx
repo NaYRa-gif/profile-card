@@ -1,5 +1,6 @@
 import { UserProfiles } from '@/src/types/index';
 import UserInfo from '../components/UserInfo';
+import UserStats from '@/src/components/Stats';
 import PlofileCarfd from '../components/ProfileCard';
 
 const dummyProfile: UserProfiles = {
@@ -7,7 +8,7 @@ const dummyProfile: UserProfiles = {
     age: 28,
     location: "Tokyo, Japan",
     avataUrl: "/avatar.png",
-    stats: {
+    sub: {
         followers: "1.2K",
         likes: "3.4K",
         photos: "150"
@@ -23,6 +24,11 @@ export default function Page() {
                     age={dummyProfile.age}
                     location={dummyProfile.location}
                     avataUrl={dummyProfile.avataUrl}
+                />
+                <UserStats
+                    followers={dummyProfile.sub.followers}
+                    likes={dummyProfile.sub.likes}
+                    photos={dummyProfile.sub.photos}
                 />
             </div>
         </div>
