@@ -1,4 +1,4 @@
-export interface UserStats {
+export interface SubProfiles {
     followers: string;
     likes: string;
     photos: string;
@@ -9,5 +9,5 @@ export interface UserProfiles {
     age: number;
     location: string;
     avataUrl: string;
-    stats: UserStats;
+    sub: SubProfiles;
 }
