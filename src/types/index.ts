@@ -1,7 +1,6 @@
 export interface SubProfiles {
-    followers: string;
-    likes: string;
-    photos: string;
+    faculty: string;
+    department: string;
 }
 
 export interface UserProfiles {
