@@ -4,14 +4,13 @@ import UserStats from '@/src/components/Stats';
 import PlofileCarfd from '../components/ProfileCard';
 
 const dummyProfile: UserProfiles = {
-    name: "John Doe",
-    age: 28,
+    name: "Seiichiro Maruyama",
+    age: 19,
     location: "Tokyo, Japan",
     avataUrl: "/avatar.png",
     sub: {
-        followers: "1.2K",
-        likes: "3.4K",
-        photos: "150"
+        faculty: "総合数理学部",
+        department: "先端メディアサイエンス学科",
     }
 }
 
@@ -26,9 +25,8 @@ export default function Page() {
                     avataUrl={dummyProfile.avataUrl}
                 />
                 <UserStats
-                    followers={dummyProfile.sub.followers}
-                    likes={dummyProfile.sub.likes}
-                    photos={dummyProfile.sub.photos}
+                    faculty={dummyProfile.sub.faculty}
+                    department={dummyProfile.sub.department}
                 />
             </div>
         </div>
